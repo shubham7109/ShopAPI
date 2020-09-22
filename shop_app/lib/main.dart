@@ -3,9 +3,11 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-final String GET_SUMMARY_URL = "http://localhost:8085/getSummary";
-final String POST_PUT_ITEMS_URL = "http://localhost:8085/putItems";
-final String RESET_URL = "http://localhost:8085/reset";
+final String GET_SUMMARY_URL =
+    "https://shopapi-290308.uc.r.appspot.com/getSummary";
+final String POST_PUT_ITEMS_URL =
+    "https://shopapi-290308.uc.r.appspot.com/putItems";
+final String RESET_URL = "https://shopapi-290308.uc.r.appspot.com/reset";
 String serverMessages = "Initializing:";
 Future<List<ShopItem>> itemList;
 List<ShopItem> items;
@@ -79,6 +81,9 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    resetDB();
+    item1Count = 0;
+    item2Count = 0;
     itemList = getSummary();
   }
 
@@ -173,35 +178,35 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(50.0, 25, 50, 10),
-                child: Text(
-                  'Server Log Messages:',
-                  style: TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w300),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(25.0),
-                    child: Row(
-                      children: [
-                        Text(
-                          '$serverMessages',
-                          style: TextStyle(
-                              fontSize: 15.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w300),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              )
+              // Padding(
+              //   padding: const EdgeInsets.fromLTRB(50.0, 25, 50, 10),
+              //   child: Text(
+              //     'Server Log Messages:',
+              //     style: TextStyle(
+              //         fontSize: 15.0,
+              //         color: Colors.black,
+              //         fontWeight: FontWeight.w300),
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.all(20.0),
+              //   child: Card(
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(25.0),
+              //       child: Row(
+              //         children: [
+              //           Text(
+              //             '$serverMessages',
+              //             style: TextStyle(
+              //                 fontSize: 15.0,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.w300),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // )
             ],
           )),
     );
