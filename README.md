@@ -31,9 +31,9 @@ API is hosted using Google Cloud App Engine.
 
 ### BackEnd Information:
 
-The backend was developed using SpringBoot and Java. The MainController.java is located [here]([https://github.com/shubham7109/ShopAPI/blob/master/backend/src/main/java/com/cyr3con/backend/MainController.java](https://github.com/shubham7109/ShopAPI/blob/master/backend/src/main/java/com/cyr3con/backend/MainController.java))
+The backend was developed using SpringBoot and Java. The MainController.java is located [here](https://github.com/shubham7109/ShopAPI/blob/master/backend/src/main/java/com/cyr3con/backend/MainController.java)
 
 ### FrontEnd Information:
-The FrontEnd was developed using the Dart and Flutter Web dev tools. Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript. The main.dart file is located [here]([https://github.com/shubham7109/ShopAPI/blob/master/shop_app/lib/main.dart](https://github.com/shubham7109/ShopAPI/blob/master/shop_app/lib/main.dart)).
+The FrontEnd was developed using the Dart and Flutter Web dev tools. Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript. The main.dart file is located [here](https://github.com/shubham7109/ShopAPI/blob/master/shop_app/lib/main.dart).
 
 #### For more questions email: shubham@websharma.com
