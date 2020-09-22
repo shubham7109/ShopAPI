@@ -8,7 +8,7 @@ API is hosted using Google Cloud App Engine.
 - Display the summary of the current units available. [GET]
 	> [https://shopapi-290308.uc.r.appspot.com/getSummary](https://shopapi-290308.uc.r.appspot.com/getSummary)
 - Make purchase and get purchase details. [POST]
-	> [https://shopapi-290308.uc.r.appspot.com/putItems](https://shopapi-290308.uc.r.appspot.com/putItems)
+	> [https://shopapi-290308.uc.r.appspot.com/putItems](https://shopapi-290308.uc.r.appspot.com/putItems).
 	> PUT request body argument example:
 
 ```
